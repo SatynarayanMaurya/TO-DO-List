@@ -11,7 +11,7 @@ import { changeLogin } from '../Redux/Slice/LoginSlice';
 
 function SignupPage() {
     
-    const url = "https://to-do-list-backend-wjyp.onrender.com"
+    const url = "https://to-do-list-backend-so3m.onrender.com"
     const dispatch = useDispatch();
     const {register, handleSubmit, formState:{errors,reset}} = useForm(
         {
