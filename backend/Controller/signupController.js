@@ -1,5 +1,5 @@
 const Signup = require("../Models/signupSchema")
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken")
 const cookieParser = require("cookie-parser")
 exports.signup = async (req,res)=>{
