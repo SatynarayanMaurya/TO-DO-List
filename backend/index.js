@@ -10,7 +10,7 @@ const Port = process.env.PORT || 4000
 database.connect();
 app.use(express.json());
 const corsOptions = {
-    origin: ['http://localhost:3000','http://192.168.1.23:3000'],
+    origin: ['http://localhost:3000','https://to-do-list-frontend-oeti.onrender.com/'],
     optionsSuccessStatus: 200 // For legacy browsers
   };
 app.use(cors(corsOptions));
