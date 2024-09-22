@@ -1,0 +1,9 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scrollbar-custom::-webkit-scrollbar {
+  width: 8px; /* For Chrome, Safari, and Edge */
+  /* background-color: red; */
+}

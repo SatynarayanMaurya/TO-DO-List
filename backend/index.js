@@ -1,0 +1,29 @@
+const express = require("express")
+const app = express();
+require("dotenv").config();
+const routes = require('./Routes/routes')
+const database = require("./config/database")
+const cors = require("cors")
+
+const Port = process.env.PORT || 4000
+
+database.connect();
+app.use(express.json());
+const corsOptions = {
+    origin: ['http://localhost:3000','http://192.168.1.23:3000'],
+    optionsSuccessStatus: 200 // For legacy browsers
+  };
+app.use(cors(corsOptions));
+app.use("/api/v1",routes);
+
+
+
+app.get("/",(req,res)=>{
+    res.send(
+        "<h1>Hello World</h1>"
+    )
+})
+
+app.listen(Port,()=>{
+    console.log("App is running")
+})
