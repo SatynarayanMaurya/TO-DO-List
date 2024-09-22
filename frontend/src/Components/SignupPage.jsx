@@ -13,11 +13,7 @@ function SignupPage() {
     
     const url = "http://localhost:4000"
     const dispatch = useDispatch();
-<<<<<<< HEAD
-    const {register, handleSubmit, formState:{errors}} = useForm(
-=======
     const {register, handleSubmit, formState:{errors,reset}} = useForm(
->>>>>>> 41a6a5255cc87747ff4039509a48fcec0cffba83
         {
             name:"",
             email:"",
@@ -27,10 +23,6 @@ function SignupPage() {
     )
 
     const onSubmit = async(data) => {
-<<<<<<< HEAD
-=======
-        // const responce = await fetch('http://localhost:4000/api/v1/auth/signup',{
->>>>>>> 41a6a5255cc87747ff4039509a48fcec0cffba83
         const responce = await fetch(url+"/api/v1/auth/signup",{
             method:"POST",
             headers:{
@@ -47,10 +39,6 @@ function SignupPage() {
         toast.success(result.message)
         dispatch(changeSignup())
         dispatch(changeLogin())
-<<<<<<< HEAD
-=======
-        // console.log("Responce : ", result);
->>>>>>> 41a6a5255cc87747ff4039509a48fcec0cffba83
       };
 
       const closeSignup = ()=>{

@@ -1,8 +1,5 @@
-<<<<<<< HEAD
+
 import React from 'react'
-=======
-import React,{useRef} from 'react'
->>>>>>> 41a6a5255cc87747ff4039509a48fcec0cffba83
 import { useForm } from 'react-hook-form';
 import { RxCross2 } from "react-icons/rx";
 import { changeLogin, setUser } from '../Redux/Slice/LoginSlice';
@@ -18,11 +15,7 @@ function LoginPage() {
     
     const dispatch = useDispatch();
     const url = "http://localhost:4000"
-<<<<<<< HEAD
     const {register, handleSubmit, formState:{errors}} = useForm(
-=======
-    const {register, handleSubmit, formState:{errors,reset}} = useForm(
->>>>>>> 41a6a5255cc87747ff4039509a48fcec0cffba83
         {
             email:"",
             password:"",
@@ -31,10 +24,6 @@ function LoginPage() {
 
     const onSubmit = async(data) => {
 
-<<<<<<< HEAD
-=======
-        // const responce = await fetch("http://localhost:4000/api/v1/auth/login",{
->>>>>>> 41a6a5255cc87747ff4039509a48fcec0cffba83
         const responce = await fetch(url+"/api/v1/auth/login",{
             method:"POST",
             headers:{
