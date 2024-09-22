@@ -10,7 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function Todolist() {
     
-    const url = "http://localhost:4000"
+    const url = "https://to-do-list-backend-sns6.onrender.com"
     const [isDeleted, setIsDeleted] = useState(false)
     const [isTodoAdded, setIsTodoAdded] = useState(false);
     const [isEditTodo, setIsEditTodo] = useState(false)
