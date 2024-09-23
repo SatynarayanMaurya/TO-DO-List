@@ -24,7 +24,7 @@ function LoginPage() {
 
     const onSubmit = async(data) => {
 
-        const responce = await fetch(url+"/api/v1/auth/login",{
+        const responce = await fetch("https://to-do-list-backend-818r.onrender.com/api/v1/auth/login",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
