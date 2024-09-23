@@ -109,6 +109,7 @@ exports.login = async (req,res)=>{
 
     }
     catch(error){
+        console.log("Catch error in login controller : ",error);
         return res.status(500).json({
             success:false,
             message:"catch error! Failed to login",
