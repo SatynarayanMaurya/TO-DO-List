@@ -13,7 +13,7 @@ const corsOptions = {
     origin: url,
     optionsSuccessStatus: 200 // For legacy browsers
   };
-app.use(cors(options));
+app.use(cors(corsOptions));
 app.use("/api/v1",routes);
 
 
