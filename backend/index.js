@@ -6,11 +6,11 @@ const database = require("./config/database")
 const cors = require("cors")
 
 const Port = process.env.PORT || 4000
-
+const url = "https://to-do-list-frontend-zjhn.onrender.com"
 database.connect();
 app.use(express.json());
 const corsOptions = {
-    origin: ['https://to-do-list-frontend-zjhn.onrender.com','http://localhost:3000','https://to-do-list-frontend-zjhn.onrender.com'],
+    origin: url,
     optionsSuccessStatus: 200 // For legacy browsers
   };
 app.use(cors(options));
