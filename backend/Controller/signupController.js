@@ -70,7 +70,7 @@ exports.login = async (req,res)=>{
         }
         
         // Now compare the password
-        const checkPassword =  bcrypt.compare(password, user.password);
+        const checkPassword =await  bcrypt.compare(password, user.password);
        
         if(checkPassword){
             
