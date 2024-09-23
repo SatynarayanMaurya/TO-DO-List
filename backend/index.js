@@ -11,7 +11,7 @@ database.connect();
 app.use(express.json());
 const corsOptions = {
     origin: url,
-    optionsSuccessStatus: 200 // For legacy browsers
+     // For legacy browsers
   };
 app.use(cors(corsOptions));
 app.use("/api/v1",routes);
